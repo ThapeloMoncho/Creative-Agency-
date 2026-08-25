@@ -1,0 +1,6 @@
+{
+  "name": "Creative Agency",
+  "description": "Minimalist professional poster, price list, and service calculator for Creative Agency in Cape Town, featuring branding, digital products, and device repairs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

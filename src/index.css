@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for category pills on small screens */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Artistic Flair Typography Strokes & Vertical text */
+  .text-stroke-azure {
+    -webkit-text-stroke: 2px #87CEEB;
+  }
+  .text-stroke-azure-sm {
+    -webkit-text-stroke: 1px #87CEEB;
+  }
+  .text-stroke-blue {
+    -webkit-text-stroke: 2px #007FFF;
+  }
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+  }
+}
+
+@media print {
+  body {
+    background-color: #002366 !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  #poster-printable-area {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
